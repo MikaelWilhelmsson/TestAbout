@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../media/img/pexels-background-1813272.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 40px 0;
+    
+}
+
+.about-card {
+    display: flex;
+    align-content: center;
+    width: 300px;
+    margin: 20px ;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 8px #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    color: #f2f2f2;
+}
+
+.about-card p {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 14px;
+    
+}
+
+
+.about-card-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+    box-shadow: 0px 3px 6px #f2f2f2;
+    text-shadow: 0 3px 4px rgba(255, 255, 255, 0.8);
+}
+
+.about-sponsor-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text-wrapper-three {
+    width: 100%;
+}
+
+.sch-logo {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.about-card video {
+    width: 280px;
+    border-radius: 10px;
+}
+
+/*
+.about-video-button {
+    height: 60px;
+    width: 60px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #f2f2f2;
+    border-radius: 360px;
+    text-shadow: -5px -5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.about-video-button i {
+    font-size: 25px;
+
+}
+*/
+
+
+@media (min-width: 600px) {
+
+.about-wrapper {
+    margin-left: -5000px;
+    animation-name: left-slide-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+   }
+
+@keyframes left-slide-in {
+    from {
+        margin-left: -5000px
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+}
+
+/*
+.about-card-one {
+    margin-left: -1000px;
+    animation-name: slide-in-one;
+    animation-duration: 1.3s ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes slide-in-one {
+    from {
+        margin-left: -1000px;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+.about-card-two {
+    margin-left: -1000px;
+    animation-name: slide-in-two;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.3s;
+}
+
+@keyframes slide-in-two {
+    from {
+        margin-left: -1000px;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+.about-card-three {
+    margin-left: -1000px;
+    animation-name: slide-in-three;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes slide-in-three {
+    from {
+        margin-left: -1000px;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+.about-card-four {
+    margin-left: -1000px;
+    animation-name: slide-in-four;
+    animation-duration: 1.9s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+}
+
+@keyframes slide-in-four {
+    from {
+        margin-left: -1000px;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+ 
+
+
+
+
+
